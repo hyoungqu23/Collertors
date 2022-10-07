@@ -9,7 +9,7 @@
 수많은 사람들의 상상을 실현시켜줄 수 있는 쇼핑몰, <a href="https://collectors-twenty.herokuapp.com/">Collector’s</a>에 방문해보세요!
 
 
-## 1. Stacks
+## 1. 기술 스택 및 디렉토리 구조
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />
@@ -29,6 +29,91 @@
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white" />
 <img src="https://img.shields.io/badge/VS Code-007ACC?&style=flat&logo=visualstudiocode&logoColor=white" />
 
+```
+📦 
+├─ README.md
+├─ index.js
+├─ package.json
+└─ src
+   ├─ app.js
+   ├─ db
+   │  ├─ index.js
+   │  ├─ models
+   │  │  ├─ category-model.js
+   │  │  ├─ item-model.js
+   │  │  ├─ orderInfo-model.js
+   │  │  └─ user-model.js
+   │  └─ schemas
+   │     ├─ category-schema.js
+   │     ├─ item-schema.js
+   │     ├─ orderInfo-schema.js
+   │     ├─ types
+   │     │  └─ short-id.js
+   │     └─ user-schema.js
+   ├─ middlewares
+   │  ├─ admin-required.js
+   │  ├─ error-handler.js
+   │  ├─ index.js
+   │  ├─ logger.js
+   │  ├─ login-required.js
+   │  └─ s3.js
+   ├─ passport
+   │  ├─ index.js
+   │  └─ strategies
+   │     ├─ google.js
+   │     └─ naver.js
+   ├─ routers
+   │  ├─ auth-router.js
+   │  ├─ category-router.js
+   │  ├─ index.js
+   │  ├─ item-router.js
+   │  ├─ orderInfo-router.js
+   │  ├─ user-router.js
+   │  └─ views-router.js
+   ├─ services
+   │  ├─ auth-service.js
+   │  ├─ category-service.js
+   │  ├─ index.js
+   │  ├─ item-service.js
+   │  ├─ orderInfo-service.js
+   │  └─ user-service.js
+   ├─ utils
+   │  ├─ get-date.js
+   │  ├─ index.js
+   │  ├─ setting-role.js
+   │  └─ shuffle-array.js
+   └─ views
+      ├─ admin
+      ├─ adminItemEdit
+      ├─ adminManage
+      ├─ adminOrderList
+      ├─ adminRegister
+      ├─ api.js
+      ├─ cart
+      ├─ components
+      │  ├─ Admin
+      │  ├─ Category
+      │  ├─ Footer
+      │  ├─ Nav
+      │  ├─ Order
+      │  ├─ QuickMenu
+      │  └─ SearchBar
+      ├─ detail
+      ├─ edit
+      ├─ home
+      ├─ list
+      ├─ login
+      ├─ order
+      ├─ orderComplete
+      ├─ orderlist
+      ├─ register
+      ├─ resign
+      ├─ style.css
+      ├─ terms
+      ├─ useful-functions.js
+      ├─ user
+      └─ userInfo
+```
 
 ## 2. 서비스 주요 기능
 
